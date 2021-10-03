@@ -16,7 +16,6 @@ if($country == "all")
 	}
 else if(isset($fields) AND count($fields) > 0)
 	{
-	//$query = "SELECT `" . implode("` , `" , $fields) . "` FROM `countries` WHERE `Country Name` = '" . $country . "'";
 	$query = "SELECT `";
 	$last = array_key_last($fields);
 	foreach($fields as $key => $field)
